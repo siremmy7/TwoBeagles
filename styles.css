@@ -1,0 +1,220 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-image: url('images/back2.jpg');
+   background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+
+
+}
+
+.main-navbar {
+
+    background-color: rgba(0,0,0,0.03);
+
+}
+
+.logo {
+  height: 50px;
+}
+nav ul li a
+{
+
+  position:relative;
+  color: white;
+}
+
+nav ul li a::after {
+  content: '';
+  height: 3px;
+  width: 0;
+  background-color: #ECF9FF;
+  opacity: 0.5;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+    transition: width 0.5s
+}
+
+nav ul li a:hover::after  {
+
+  width: 50%;
+  cursor: pointer;
+
+}
+
+.logo-text  {
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+}
+
+.logo-text:hover  {
+  color: gray;
+}
+
+.side-bar {
+  position: absolute;
+  height: 100vh;
+  width: 5%;
+  right: 0;
+  background-color: gray;
+  opacity: 0.1;
+  position: fixed;
+}
+
+div i {
+  margin-bottom:70%;
+
+  color: blue;
+  opacity: 1;
+
+}
+
+.logos  {
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.sliding-pictues  {
+  width:50%;
+  margin: 10% auto 0;
+}
+
+.slide  {
+  height: 40%;;
+  width: 40%;
+}
+
+.horizontal  {
+  border-top: dotted 10px  gray;
+  width: 10%;
+  margin: 100px auto 100px;
+}
+.text {
+  width: 50%;
+  margin: 40px auto 40px;
+  font-weight: bold;
+  font-size: 2rem;
+
+  padding: 0 20px 0;
+  color: gray;
+}
+
+.contact-us {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 10px;
+
+}
+.form-body {
+margin-bottom: 40px;
+position: relative;
+color: gray;
+}
+
+input,textarea {
+  width: 100%;
+  padding: 10px;
+  outline: 0;
+  border: 3px solid white;
+  background: transparent;
+  color: white;
+  font-size: 15px;
+}
+label {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 10px;
+  color: gray;
+  cursor: text;
+  transition: 0.2s;
+}
+
+button  {
+  width: 100%;
+  padding: 10px 0;
+  color: gray;
+  outline: none;
+  border: 3px solid white;
+  background: transparent;
+}
+
+.buton:hover  {
+  background-color: gray;
+  color: white;
+  transition: 1s;
+}
+
+
+
+input:focus~label,input:hover~label,textarea:hover~label,input:valid~label,textarea:focus~label,textarea:valid~label{
+  font-size: 14px;
+  top: -35px;
+}
+
+.form-title {
+  margin: 50px auto;
+  line-height: 4;
+  text-align: center;
+}
+
+.form-title h1, .form-title h3 {
+  font-family: 'Itim', cursive;
+  color: gray;
+}
+
+.upper-group  {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.upper-group .form-body  {
+  flex-basis: 48%;
+}
+
+iframe  {
+  margin: 2% 5%;
+  border-radius: 10px;
+}
+
+.videos {
+
+  font-family: 'Itim', cursive;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: gray;
+
+}
+
+.cole img  {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.cole {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 40px;
+}
+
+.project-text {
+  text-align: center;
+  font-family: 'Itim', cursive;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: gray;
+}
